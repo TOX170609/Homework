@@ -1,0 +1,64 @@
+body{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
+header.page-header {
+    padding: 30px 30px 30px 450px;
+    color: yellow;
+    text-shadow: 0 0 50px green;
+}
+header.page-header > h1 {
+    font: bold calc(80px) 'Dancing Script', cursive;
+    margin: 10px;
+}
+
+main{
+    font: calc(120%) Verdana;
+}
+
+.Me {
+    background-image: url("../images/me.jpg");
+    width: 600px;
+    height: 650px;
+    background-size: cover;
+    float: left;
+    border: 3px solid gray;
+}
+.Name > h2{
+    color: orangered;
+    font: bold calc(70px) 'Dancing Script';
+    margin: 10px;
+}
+.Name, .Info, .Feedback{
+    float: left;
+}
+.Name {
+    width: 940px;
+    height: 100px;
+    border: 3px solid gray;
+    border-radius: 25px;
+    background-color: lightsteelblue;
+    margin: 0 30px 30px 30px;
+}
+.Info, .Feedback{
+    width: 440px;
+    height: 515px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    background-color: lightsteelblue;
+    margin: 0 30px 30px 30px;
+}
+
+footer.page-footer {
+    padding: 0 0 0 700px;
+    color: lightgreen;
+    text-shadow: 0 0 20px black;
+}
+footer.page-footer > h1 {
+    font: bold calc(15px) "Harlow Solid Italic", cursive;
+
+}
+
+
+
