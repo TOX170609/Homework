@@ -59,6 +59,11 @@ footer.page-footer > h1 {
     font: bold calc(15px) "Harlow Solid Italic", cursive;
 
 }
+.one {
+    float: right;
+    font: bold calc(25px) "Harlow Solid Italic", cursive;
+    color: red;
+}
 
 
 
