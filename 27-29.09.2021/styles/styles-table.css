@@ -1,0 +1,113 @@
+body {
+    background-image: url("../images/Chemical.jpg");
+    background-size: cover;
+}
+.caption{
+    font: bold calc(40px) Verdana, cursive;
+}
+.my_table, tr, td{
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+.my_table{
+    margin-top: 250px;
+}
+td{
+    background-color: deepskyblue;
+    width: 300px;
+}
+.element1{
+    font: bold calc(120px) Verdana;
+    position: relative;
+    bottom: 25px;
+    left: 170px;
+}
+.number1{
+    font: bold calc(40px) Verdana;
+    position: relative;
+    bottom: 85px;
+    right: 120px;
+}
+.name1{
+    font: bold calc(25px) Verdana;
+    position: relative;
+    left: 30px;
+    top: 50px;
+}
+.weight1{
+    font: calc(25px) Verdana;
+    position: relative;
+    bottom: 80px;
+    left: 0;
+}
+.element2{
+    font: bold calc(120px) Verdana;
+    position: relative;
+    bottom: 25px;
+    left: 190px;
+}
+.number2{
+    font: bold calc(40px) Verdana;
+    position: relative;
+    bottom: 85px;
+    right: 90px;
+}
+.name2{
+    font: bold calc(25px) Verdana;
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+.weight2{
+    font: calc(25px) Verdana;
+    position: relative; 
+    bottom: 80px;
+}
+.element3{
+    font: bold calc(120px) Verdana;
+    position: relative;
+    bottom: 25px;
+    left: 150px;
+}
+.number3{
+    font: bold calc(40px) Verdana;
+    position: relative;
+    bottom: 85px;
+    right: 150px;
+}
+.name3{
+    font: bold calc(25px) Verdana;
+    position: relative;
+    left: 10px;
+    top: 50px;
+}
+.weight3{
+    font: calc(25px) Verdana;
+    position: relative;
+    bottom: 80px;
+}
+.element4{
+    font: bold calc(120px) Verdana;
+    position: relative;
+    bottom: 25px;
+    left: 100px;
+}
+.number4{
+    font: bold calc(40px) Verdana;
+    position: relative;
+    bottom: 85px;
+    right: 200px;
+}
+.name4{
+    font: bold calc(25px) Verdana;
+    position: relative;
+    left: 150px;
+}
+.weight4{
+    font: calc(25px) Verdana;
+    position: relative;
+    bottom: 80px;
+    right: 145px;
+}
+
+

@@ -2,21 +2,23 @@ body{
     background-image: url("../images/background.jpg");
     background-size: cover;
 }
-
-header.page-header {
-    padding: 30px 30px 30px 450px;
+.two{
+    float: right;
+    padding: 0 50px 10px 1450px;
+    font: 15px Verdana;
+    color: firebrick;
+}
+.header > h1 {
+    border: black;
+    padding: 0 30px 30px 450px;
+    font: bold calc(80px) 'Dancing Script', cursive;
+    margin: 10px;
     color: yellow;
     text-shadow: 0 0 50px green;
 }
-header.page-header > h1 {
-    font: bold calc(80px) 'Dancing Script', cursive;
-    margin: 10px;
-}
-
 main{
     font: calc(120%) Verdana;
 }
-
 .Me {
     background-image: url("../images/me.jpg");
     width: 600px;
@@ -49,15 +51,13 @@ main{
     background-color: lightsteelblue;
     margin: 0 30px 30px 30px;
 }
-
-footer.page-footer {
+.footer {
     padding: 0 0 0 700px;
     color: lightgreen;
     text-shadow: 0 0 20px black;
 }
-footer.page-footer > h1 {
+.footer > h1 {
     font: bold calc(15px) "Harlow Solid Italic", cursive;
-
 }
 .one {
     float: right;
