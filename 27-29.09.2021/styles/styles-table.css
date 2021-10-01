@@ -4,13 +4,14 @@ body {
 }
 .caption{
     font: bold calc(40px) Verdana, cursive;
+    color: yellow;
 }
 .my_table, tr, td{
     border: 3px solid black;
     border-collapse: collapse;
 }
 .my_table{
-    margin-top: 250px;
+    /*margin-top: 250px;*/
 }
 td{
     background-color: deepskyblue;
@@ -109,5 +110,89 @@ td{
     bottom: 80px;
     right: 145px;
 }
-
+.element5{
+    font: bold calc(120px) Verdana;
+    position: relative;
+    bottom: 25px;
+}
+.number5{
+    font: bold calc(40px) Verdana;
+    position: relative;
+    bottom: 85px;
+    left: 55px;
+}
+.name5{
+    font: bold calc(25px) Verdana;
+    position: relative;
+}
+.weight5{
+    font: calc(25px) Verdana;
+    position: relative;
+    bottom: 80px;
+    left: 75px;
+}
+.element6{
+    font: bold calc(120px) Verdana;
+    position: relative;
+    bottom: 25px;
+}
+.number6{
+    font: bold calc(40px) Verdana;
+    position: relative;
+    bottom: 85px;
+    left: 55px;
+}
+.name6{
+    font: bold calc(25px) Verdana;
+    position: relative;
+}
+.weight6{
+    font: calc(25px) Verdana;
+    position: relative;
+    bottom: 80px;
+    left: 70px;
+}
+.element7{
+    font: bold calc(120px) Verdana;
+    position: relative;
+    bottom: 25px;
+}
+.number7{
+    font: bold calc(40px) Verdana;
+    position: relative;
+    bottom: 85px;
+    left: 65px;
+}
+.name7{
+    font: bold calc(25px) Verdana;
+    position: relative;
+}
+.weight7{
+    font: calc(25px) Verdana;
+    position: relative;
+    bottom: 80px;
+    left: 130px;
+}
+.element8{
+    font: bold calc(120px) Verdana;
+    position: relative;
+    bottom: 25px;
+}
+.number8{
+    font: bold calc(40px) Verdana;
+    position: relative;
+    bottom: 85px;
+    left: 85px;
+}
+.name8{
+    font: bold calc(25px) Verdana;
+    position: relative;
+    top: 50px;
+}
+.weight8{
+    font: calc(25px) Verdana;
+    position: relative;
+    bottom: 80px;
+    left: 210px;
+}
 
