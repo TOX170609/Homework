@@ -11,7 +11,7 @@ body {
     border-collapse: collapse;
 }
 .my_table{
-    /*margin-top: 250px;*/
+    margin-top: 250px;
 }
 td{
     background-color: deepskyblue;
