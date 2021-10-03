@@ -2,197 +2,330 @@ body {
     background-image: url("../images/Chemical.jpg");
     background-size: cover;
 }
-.caption{
+
+span {
+    color: black;
+}
+
+.caption {
     font: bold calc(40px) Verdana, cursive;
     color: yellow;
+    text-shadow: 0 0 50px red;
+    padding-bottom: 20px;
 }
-.my_table, tr, td{
+
+.first_line, .third_line {
+    background-color: deepskyblue;
+}
+
+.second_line, .fourth_line {
+    background-color: yellow;
+}
+
+.first_line td:hover {
+    transition: all .3s;
+}
+
+.first_line td:hover {
+    background-color: #ccc;
+}
+
+.second_line td:hover {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.third_line td:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.fourth_line td:hover {
+    -webkit-transform: rotateZ(20deg);
+    -ms-transform: rotateZ(20deg);
+    transform: rotateZ(20deg);
+}
+
+.my_table, tr, td {
     border: 3px solid black;
     border-collapse: collapse;
+    margin-top: 50px;
 }
-.my_table{
-    margin-top: 250px;
-}
-td{
-    background-color: deepskyblue;
+
+td {
     width: 300px;
 }
-.element1{
+
+.element1, .element2, .element3, .element4, .element5, .element6, .element7, .element8,
+.element9, .element10, .element11, .element12, .element13, .element14, .element15, .element16 {
     font: bold calc(120px) Verdana;
     position: relative;
+}
+
+.number1, .number2, .number3, .number4, .number5, .number6, .number7, .number8,
+.number9, .number10, .number11, .number12, .number13, .number14, .number15, .number16 {
+    font: bold calc(40px) Verdana;
+    position: relative;
+}
+
+.name1, .name2, .name3, .name4, .name5, .name6, .name7, .name8,
+.name9, .name10, .name11, .name12, .name13, .name14, .name15, .name16 {
+    font: bold calc(25px) Verdana;
+    position: relative;
+}
+
+.weight1, .weight2, .weight3, .weight4, .weight5, .weight6, .weight7, .weight8,
+.weight9, .weight10, .weight11, .weight12, .weight13, .weight14, .weight15, .weight16 {
+    font: calc(25px) Verdana;
+    position: relative;
+}
+
+.element5, .element6, .element7, .element8, .element13, .element14, .element15, .element16 {
+    bottom: 25px;
+}
+
+.element1 {
     bottom: 25px;
     left: 170px;
 }
-.number1{
-    font: bold calc(40px) Verdana;
-    position: relative;
+
+.number1 {
     bottom: 85px;
     right: 120px;
 }
-.name1{
-    font: bold calc(25px) Verdana;
-    position: relative;
+
+.name1 {
     left: 30px;
     top: 50px;
 }
-.weight1{
-    font: calc(25px) Verdana;
-    position: relative;
+
+.weight1 {
     bottom: 80px;
     left: 0;
 }
-.element2{
-    font: bold calc(120px) Verdana;
-    position: relative;
+
+.element2 {
     bottom: 25px;
-    left: 190px;
+    left: 200px;
 }
-.number2{
-    font: bold calc(40px) Verdana;
-    position: relative;
+
+.number2 {
     bottom: 85px;
     right: 90px;
 }
-.name2{
-    font: bold calc(25px) Verdana;
-    position: relative;
+
+.name2 {
     left: 20px;
     top: 50px;
 }
-.weight2{
-    font: calc(25px) Verdana;
-    position: relative; 
+
+.weight2 {
     bottom: 80px;
 }
-.element3{
-    font: bold calc(120px) Verdana;
-    position: relative;
+
+.element3 {
     bottom: 25px;
     left: 150px;
 }
-.number3{
-    font: bold calc(40px) Verdana;
-    position: relative;
+
+.number3 {
     bottom: 85px;
     right: 150px;
 }
-.name3{
-    font: bold calc(25px) Verdana;
-    position: relative;
+
+.name3 {
     left: 10px;
     top: 50px;
 }
-.weight3{
-    font: calc(25px) Verdana;
-    position: relative;
+
+.weight3 {
     bottom: 80px;
 }
-.element4{
-    font: bold calc(120px) Verdana;
-    position: relative;
+
+.element4 {
     bottom: 25px;
     left: 100px;
 }
-.number4{
-    font: bold calc(40px) Verdana;
-    position: relative;
+
+.number4 {
     bottom: 85px;
     right: 200px;
 }
-.name4{
-    font: bold calc(25px) Verdana;
-    position: relative;
+
+.name4 {
     left: 150px;
 }
-.weight4{
-    font: calc(25px) Verdana;
-    position: relative;
+
+.weight4 {
     bottom: 80px;
     right: 145px;
 }
-.element5{
-    font: bold calc(120px) Verdana;
-    position: relative;
-    bottom: 25px;
-}
-.number5{
-    font: bold calc(40px) Verdana;
-    position: relative;
+
+.number5 {
     bottom: 85px;
     left: 55px;
 }
-.name5{
-    font: bold calc(25px) Verdana;
-    position: relative;
-}
-.weight5{
-    font: calc(25px) Verdana;
-    position: relative;
+
+.weight5 {
     bottom: 80px;
     left: 75px;
 }
-.element6{
-    font: bold calc(120px) Verdana;
-    position: relative;
-    bottom: 25px;
-}
-.number6{
-    font: bold calc(40px) Verdana;
-    position: relative;
+
+.number6 {
     bottom: 85px;
-    left: 55px;
+    left: 70px;
 }
-.name6{
-    font: bold calc(25px) Verdana;
-    position: relative;
-}
-.weight6{
-    font: calc(25px) Verdana;
-    position: relative;
+
+.weight6 {
     bottom: 80px;
     left: 70px;
 }
-.element7{
-    font: bold calc(120px) Verdana;
-    position: relative;
-    bottom: 25px;
-}
-.number7{
-    font: bold calc(40px) Verdana;
-    position: relative;
+
+.number7 {
     bottom: 85px;
-    left: 65px;
+    left: 70px;
 }
-.name7{
-    font: bold calc(25px) Verdana;
-    position: relative;
-}
-.weight7{
-    font: calc(25px) Verdana;
-    position: relative;
+
+.weight7 {
     bottom: 80px;
     left: 130px;
 }
-.element8{
-    font: bold calc(120px) Verdana;
-    position: relative;
-    bottom: 25px;
-}
-.number8{
-    font: bold calc(40px) Verdana;
-    position: relative;
+
+.number8 {
     bottom: 85px;
     left: 85px;
 }
-.name8{
-    font: bold calc(25px) Verdana;
-    position: relative;
+
+.name8 {
     top: 50px;
+    right: 215px;
 }
-.weight8{
-    font: calc(25px) Verdana;
-    position: relative;
+
+.weight8 {
     bottom: 80px;
     left: 210px;
+}
+
+.element9 {
+    bottom: 25px;
+    left: 150px;
+}
+
+.number9 {
+    bottom: 85px;
+    right: 46%;
+}
+
+.name9 {
+    left: 50%;
+}
+
+.weight9 {
+    bottom: 80px;
+    right: 49%;
+}
+
+.element10 {
+    bottom: 25px;
+    left: 40%;
+}
+
+.number10 {
+    bottom: 85px;
+    right: 60%;
+}
+
+.name10 {
+    left: 63%;
+}
+
+.weight10 {
+    bottom: 80px;
+    right: 37%;
+}
+
+.element11 {
+    bottom: 25px;
+    left: 100px;
+}
+
+.number11 {
+    bottom: 85px;
+    right: 200px;
+}
+
+.name11 {
+    left: 50%;
+}
+
+.weight11 {
+    bottom: 80px;
+    right: 50%;
+}
+
+.element12 {
+    bottom: 25px;
+    left: 47%;
+}
+
+.number12 {
+    bottom: 85px;
+    right: 50%;
+}
+
+.name12 {
+    left: 150px;
+}
+
+.weight12 {
+    bottom: 80px;
+    right: 145px;
+}
+
+.number13 {
+    bottom: 85px;
+    left: 60px;
+}
+
+.weight13 {
+    bottom: 80px;
+    left: 110px;
+}
+
+.number14 {
+    bottom: 85px;
+    left: 70px;
+}
+
+.weight14 {
+    bottom: 80px;
+    left: 100px;
+}
+
+.number15 {
+    bottom: 85px;
+    left: 70px;
+}
+
+.weight15 {
+    bottom: 80px;
+    left: 115px;
+}
+
+.number16 {
+    bottom: 85px;
+    left: 165px;
+}
+
+.name16 {
+    top: 50px;
+    right: 125px;
+}
+
+.weight16 {
+    bottom: 80px;
+    left: 180px;
 }
 

@@ -1,49 +1,81 @@
-body{
-    background-image: url("../images/background.jpg");
+body {
+    background-color: lightgoldenrodyellow;
     background-size: cover;
 }
-.two{
-    float: right;
-    padding: 0 50px 10px 1450px;
-    font: 15px Verdana;
-    color: firebrick;
+
+.two {
+    color: black;
 }
+
+.two:hover {
+    transition: all .3s;
+}
+
+.two:hover {
+    background-color: yellow;
+}
+
+.top {
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
 .header > h1 {
-    border: black;
-    padding: 0 30px 30px 450px;
+    padding: 0 30px 0px 450px;
     font: bold calc(80px) 'Dancing Script', cursive;
     margin: 10px;
-    color: yellow;
-    text-shadow: 0 0 50px green;
+    color: grey;
 }
-main{
+
+.flex_menu {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    font: 20px Verdana;
+    justify-content: flex-end;
+}
+
+main {
     font: calc(120%) Verdana;
 }
+
 .Me {
-    background-image: url("../images/me.jpg");
-    width: 600px;
-    height: 650px;
     background-size: cover;
     float: left;
-    border: 3px solid gray;
 }
-.Name > h2{
-    color: orangered;
-    font: bold calc(70px) 'Dancing Script';
-    margin: 10px;
+
+.Me:hover {
+    box-shadow: 1px 1px yellow,
+    2px 2px yellow,
+    3px 3px yellow,
+    4px 4px yellow,
+    5px 5px yellow,
+    6px 6px yellow,
+    7px 7px yellow;
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
 }
-.Name, .Info, .Feedback{
+
+.Name > h2 {
+    color: yellow;
+    font: bold calc(70px) 'Dancing Script', cursive;
+    margin: -5px;
+}
+
+.Name, .Info, .Feedback {
     float: left;
 }
+
 .Name {
     width: 940px;
     height: 100px;
     border: 3px solid gray;
     border-radius: 25px;
     background-color: lightsteelblue;
-    margin: 0 30px 30px 30px;
+    margin: 0 30px 22px 30px;
 }
-.Info, .Feedback{
+
+.Info, .Feedback {
     width: 440px;
     height: 515px;
     border: 3px solid gray;
@@ -51,19 +83,74 @@ main{
     background-color: lightsteelblue;
     margin: 0 30px 30px 30px;
 }
-.footer {
-    padding: 0 0 0 700px;
-    color: lightgreen;
-    text-shadow: 0 0 20px black;
+
+.was, .will {
+    font: calc(80px) 'Dancing Script', cursive;
+    color: grey;
+    text-align: center;
 }
+
+.flex_info {
+    width: 1650px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15% -1%;
+}
+
+.block_element {
+    flex: 1;
+}
+
+.block_element {
+    background-size: cover;
+    margin: 1%;
+
+}
+
+.picture_1:hover {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.text {
+    border: 2px solid #5e5373;
+    text-align: center;
+    font: 15px Verdana;
+    background-color: white;
+}
+
+.text:hover {
+    transition: all .3s;
+}
+
+.text:hover {
+    background-color: yellow;
+}
+
+.grid {
+    height: 100%;
+    width: 100%;
+    border: 1px black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-template-rows: 51%;
+}
+
+.footer {
+    padding: 50px 0 0 700px;
+    color: grey;
+}
+
 .footer > h1 {
     font: bold calc(15px) "Harlow Solid Italic", cursive;
 }
-.one {
-    float: right;
-    font: bold calc(25px) "Harlow Solid Italic", cursive;
-    color: red;
-}
+
 
 
 
