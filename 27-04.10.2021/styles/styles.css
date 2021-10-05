@@ -21,7 +21,7 @@ body {
 }
 
 .header > h1 {
-    padding: 0 30px 0px 450px;
+    padding: 0 30px 0 450px;
     font: bold calc(80px) 'Dancing Script', cursive;
     margin: 10px;
     color: grey;
@@ -85,7 +85,7 @@ main {
 }
 
 .was, .will {
-    font: calc(80px) 'Dancing Script', cursive;
+    font: calc(70px) 'Dancing Script', cursive;
     color: grey;
     text-align: center;
 }
@@ -95,6 +95,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 15% -1%;
 }
 
@@ -139,7 +140,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
-    grid-template-rows: 51%;
+    grid-template-rows: 51% 51%;
 }
 
 .footer {
@@ -151,6 +152,11 @@ main {
     font: bold calc(15px) "Harlow Solid Italic", cursive;
 }
 
+@media screen and (min-width: 360px) and (max-width: 768px){
+    .header{
+
+    }
+}
 
 
 

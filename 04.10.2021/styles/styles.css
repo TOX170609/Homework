@@ -1,0 +1,156 @@
+body {
+    background-color: lightgoldenrodyellow;
+    background-size: cover;
+}
+
+.two {
+    color: black;
+}
+
+.two:hover {
+    transition: all .3s;
+}
+
+.two:hover {
+    background-color: yellow;
+}
+
+.top {
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+.header > h1 {
+   text-align: center;
+    font: bold calc(60px) 'Dancing Script', cursive;
+    color: grey;
+}
+
+.flex_menu {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    font: 20px Verdana;
+    justify-content: flex-end;
+}
+
+main {
+    font: calc(120%) Verdana;
+}
+.Me{
+    text-align: center;
+}
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+}
+@media screen and (max-width: 700px){
+    .grid1{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
+@media screen and (max-width: 350px){
+    .grid1{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
+.Me:hover {
+    box-shadow: 1px 1px yellow,
+    2px 2px yellow,
+    3px 3px yellow,
+    4px 4px yellow,
+    5px 5px yellow,
+    6px 6px yellow,
+    7px 7px yellow;
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+}
+
+.Name, .Info, .Feedback {
+    border: 3px solid gray;
+    border-radius: 10px;
+    background-color: lightsteelblue;
+    text-align: center;
+}
+.flex_info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 5px;
+}
+@media screen and (max-width: 700px){
+    .flex_info{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
+@media screen and (max-width: 350px){
+    .flex_info{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
+
+.picture_1:hover {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.text {
+    border: 2px solid #5e5373;
+    text-align: center;
+    font: 15px Verdana;
+    background-color: white;
+}
+
+.text:hover {
+    transition: all .3s;
+}
+
+.text:hover {
+    background-color: yellow;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+.was, .will{
+    font: calc(60px) 'Dancing Script', cursive;
+    color: grey;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 350px){
+    .container{
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.footer {
+    color: grey;
+    text-align: center;
+}
+
+.footer > h1 {
+    font: bold calc(15px) "Harlow Solid Italic", cursive;
+}
+
+
+
+
+
