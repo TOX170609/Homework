@@ -37,27 +37,25 @@ body {
 main {
     font: calc(120%) Verdana;
 }
-.Me{
-    text-align: center;
-}
 .grid1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     gap: 10px 10px;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 769px){
     .grid1{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 1fr;
     }
 }
-@media screen and (max-width: 350px){
-    .grid1{
-        grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width: 360px) {
+    .grid1 {
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
 }
+
 .Me:hover {
     box-shadow: 1px 1px yellow,
     2px 2px yellow,
@@ -82,13 +80,13 @@ main {
     grid-template-rows: 1fr;
     gap: 5px;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 769px){
     .flex_info{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 1fr;
     }
 }
-@media screen and (max-width: 350px){
+@media screen and (max-width: 361px){
     .flex_info{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 1fr;
@@ -134,7 +132,7 @@ main {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (max-width: 350px){
+@media screen and (max-width: 369px){
     .container{
         grid-template-rows: repeat(1, 1fr);
         grid-template-columns: repeat(1, 1fr);
