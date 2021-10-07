@@ -7,11 +7,13 @@
 initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href=
         <?php
-        if (date('H') > 00 && date('H') < 06) {
+        $date = date_default_timezone_set('Europe/Moscow');
+        if(($date > 00) && ($date < 06)){
             $style = 'styles/styles_night.css';
         } else {
             $style = 'styles/styles_day.css';
         }
+        echo "$style"
         ?>
     >
     <title>Homework</title>
