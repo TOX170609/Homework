@@ -1,3 +1,11 @@
+<?php
+date_default_timezone_set('Europe/Moscow');
+if(date('H') >8 && date('H') <22){
+    $style = 'styles/styles_day.css';
+} else {
+    $style = 'styles/styles_night.css';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,17 +13,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no,
 initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href=
-        <?php
-        $date = date_default_timezone_set('Europe/Moscow');
-        if(($date > 00) && ($date < 06)){
-            $style = 'styles/styles_night.css';
-        } else {
-            $style = 'styles/styles_day.css';
-        }
-        echo "$style"
-        ?>
-    >
+    <link rel="stylesheet" href = <?php echo "$style"?>>
     <title>Homework</title>
 </head>
 <body>
