@@ -1,0 +1,37 @@
+body{
+    background-color: lightgreen;
+}
+.array_0{
+    color: rebeccapurple;
+    font: bold calc(40px) Verdana, cursive;
+    border: 5px solid slategray;
+    width: 1100px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 280px;
+}
+.array_1{
+    font: bold calc(40px) Verdana, cursive;
+    border: 5px solid slategray;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 550px;
+}
+.array_2{
+    color: grey;
+    font: bold calc(40px) Verdana, cursive;
+    border: 5px solid slategray;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 550px;
+}
+.array_3{
+    color: red;
+    font: bold calc(40px) Verdana, cursive;
+    border: 5px solid slategray;
+    width: 1300px;
+    text-align: center;
+    margin-left: 150px;
+}

@@ -1,11 +1,12 @@
 <?php
 date_default_timezone_set('Europe/Moscow');
-if(date('H') >8 && date('H') <22){
+if(date('H') >10 && date('H') <22){
     $style = 'styles/styles_day.css';
 } else {
     $style = 'styles/styles_night.css';
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,17 +18,9 @@ initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Homework</title>
 </head>
 <body>
-<header class="header">
-    <h1>Домашняя работа</h1>
-    <div class="flex_menu">
-        <div class="top">
-            <a href="image.html" target="_blank" style="text-decoration: none" class="two">Таблица</a>
-        </div>
-        <div class="top">
-            <a href=# style="text-decoration: none" class="two">Авторизация</a>
-        </div>
-    </div>
-</header>
+<?php
+include ('header/header.php');
+?>
 <main>
     <div class="grid1">
         <div class="Me" title="Marmaris,2021">

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/styles-table.css">
+    <link rel="stylesheet" href="styles_menu/style_table.css">
     <title>Table</title>
 </head>
 <body>
