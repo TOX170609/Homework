@@ -40,7 +40,7 @@ main {
 .grid1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 40px 280px;
+    grid-template-rows: 40px 250px;
     gap: 10px 10px;
 }
 .Name {
@@ -165,7 +165,7 @@ main {
 }
 
 .footer > h1 {
-    font: bold calc(15px) "Harlow Solid Italic", cursive;
+    font: bold calc(20px) "Harlow Solid Italic", cursive;
 }
 
 
