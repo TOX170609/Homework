@@ -1,22 +1,62 @@
 <?php
+
 date_default_timezone_set('Europe/Moscow');
-if (date('H') > 10 && date('H') < 22) {
-    $style = 'styles/styles_day.css';
-} else {
-    $style = 'styles/styles_night.css';
+//функция временных тем страницы
+function real()
+{
+    if (date('H') > 10 && date('H') < 20) {
+        echo 'styles/styles_day.css';
+    } else {
+        echo 'styles/styles_night.css';
+    }
 }
+
+
+//окрас четных слов
+function color_text($text)
+{
+    $text_array = explode(' ', $text);
+    foreach ($text_array as $key => $value) {
+        if (($key % 2) == 1) {
+            echo ' ' . "<font color='red'>$value</font>" . ' ';
+        } else {
+            echo $value;
+        }
+    }
+}
+
+// окрас первого предложения
+function color_text1($text1)
+{
+    echo str_replace("Мне 32 года, женат, работаю на ПАО «ММК» менеджером по развитию первого 
+            передела в группе главного металлурга, по образованию инженер-металлург.", "<font color='red'>Мне 32 
+            года, женат, работаю на ПАО «ММК» менеджером по развитию первого передела в группе главного металлурга, по
+            образованию инженер-металлург.</font>", $text1);
+}
+
+// функция подсчета дней со дня рождения
+$my_date = "03.04.1989";
+$now_date = date('d.m.Y');
+function count_days($my_date, $now_date)
+{
+    $my_date_unix = strtotime($my_date);
+    $now_date_unix = strtotime($now_date);
+    $end = (round(($now_date_unix - $my_date_unix) / 86400));
+    echo "<font size='5px'>Разность между датой моего рождения и сегодняшней датой составляет " . $end . " день </font>" . '<br>';
+}
+
 ?>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no,
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
 initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href= <?php echo "$style" ?>>
-        <title>Homework</title>
-    </head>
+    <link rel="stylesheet" href= <?php real(); ?>>
+    <title>Homework</title>
+</head>
 <body>
 <?php
 include('header/header.php');
@@ -40,10 +80,8 @@ include('header/header.php');
             избирательному округу Магнитогорского городского собрания депутатов, занимаюсь спортом, бег, велосипед, 
             тренажерный зал.<br>Владею английским языком на уровне intermediate, на выходных по возможности участвую в 
             разговорных клубах (для подержания навыков).';
-            echo str_replace("Мне 32 года, женат, работаю на ПАО «ММК» менеджером по развитию первого 
-            передела в группе главного металлурга, по образованию инженер-металлург.", "<font color='red'>Мне 32 
-            года, женат, работаю на ПАО «ММК» менеджером по развитию первого передела в группе главного металлурга, по
-            образованию инженер-металлург.</font>", $text1);
+
+            color_text1($text1);
             ?>
         </div>
         <div class="Feedback" align="center">
@@ -53,47 +91,41 @@ include('header/header.php');
             вопросов. На данный момент могу сказать,что я очень доволен проходящим обучением. Рад тому моменту что 
             обучение пришлось на осень, погода на улице не отвлекает от рабочего процесса, ведь какой бы ты
             целеустремленный не был всегда есть отвлекающие факторы, сейчас их меньше. Теперь главное не отстать.';
-            $text_array = explode(' ', $text);
-            foreach ($text_array as $key => $value) {
-                if (($key % 2) == 1) {
-                    echo ' ' . "<font color='red'>$value</font>" . ' ';
-                } else {
-                    echo $value;
-                }
-            }
+
+            color_text($text);
             ?>
         </div>
     </div>
     <div class="was"><? $text4 = 'Где побывал';
         echo $text4; ?></div>
     <div class="flex_info">
-    <div class="block_element">
-        <div class="picture_1">
-            <a href="https://www.architime.ru/specarch/suryavarman/angkor_wat.htm#1.jpg">
-                <img src="images/Cambodgia.jpg" alt="" width="100%">
-            </a>
-        </div>
-        <div class="text"><?
-            $text5 = 'Ангко́р-Ват прибл. перевод — «столичный храм»; возможный перевод «обитель Вишну») — храмовый комплекс в
+        <div class="block_element">
+            <div class="picture_1">
+                <a href="https://www.architime.ru/specarch/suryavarman/angkor_wat.htm#1.jpg">
+                    <img src="images/Cambodgia.jpg" alt="" width="100%">
+                </a>
+            </div>
+            <div class="text"><?
+                $text5 = 'Ангко́р-Ват прибл. перевод — «столичный храм»; возможный перевод «обитель Вишну») — храмовый комплекс в
                 честь бога Вишну, построенный королём Сурьяварманом II в первой половине XII века в области Ангкор,
                 провинции Сиемреап на севере Камбоджи, в окрестностях Великого озера, где в XI—XIV веках находился район
                 столиц Ангкорской империи и резиденций древних кхмерских царей.';
-            echo $text5;
-            ?>
+                echo $text5;
+                ?>
+            </div>
         </div>
-    </div>
-    <div class="block_element">
-        <div class="picture_1">
-            <a href="https://2banana.com/o-strane/ekskursii-v-dominikane/gorod-khudozhnikov-dominikana">
-                <img src="images/Dominik.JPG" alt="" width="100%">
-            </a>
-        </div>
-        <div class="text"><?
+        <div class="block_element">
+            <div class="picture_1">
+                <a href="https://2banana.com/o-strane/ekskursii-v-dominikane/gorod-khudozhnikov-dominikana">
+                    <img src="images/Dominik.JPG" alt="" width="100%">
+                </a>
+            </div>
+            <div class="text"><?
                 $text6 = 'д. Альтос-де-Чавон (исп. Altos de Chavón) — искусственно воссозданная средневековая территория — точная
                 копия испанской деревни XV века, называемый городом художников и ремесленников. В городке есть несколько
                 каменных улочек, центральная площадь, школа живописи, амфитеатр и церковь святого Станислава, в которой
                 венчались многие звёзды. Одними из них были знаменитый Майкл Джексон и Луиза Пресли.';
-            echo $text6;
+                echo $text6;
                 ?>
             </div>
         </div>
@@ -128,7 +160,8 @@ include('header/header.php');
             </div>
         </div>
     </div>
-    <div class="will"><? $text10 = 'Где мечтаю побывать'; echo $text10; ?></div>
+    <div class="will"><? $text10 = 'Где мечтаю побывать';
+        echo $text10; ?></div>
     <div class="container">
         <div class="grid">
             <div class="picture_1">
@@ -204,24 +237,28 @@ include('header/header.php');
     </div>
 </main>
 <div class="footer">
-    <h2><? $text14 = 'Произведено Мной';echo $text14; ?></h2>
-<?
-    echo "<font size='5px'>На странице выведено " . (str_word_count($text)+str_word_count($text1)+str_word_count($text4)+str_word_count($text3)+str_word_count($text5)
-        +str_word_count($text6)+str_word_count($text7)+str_word_count($text8)+str_word_count($text9)+str_word_count($text10)
-        +str_word_count($text11)+str_word_count($text12)+str_word_count($text13)+str_word_count($text14)+3) . " слов</font>" . "<br>";
-
-    $my_date = "03.04.1989";
-	$now_date = date('d.m.Y');
-	$my_date_unix = strtotime($my_date);
-	$now_date_unix = strtotime($now_date);
-    $end = (round(($now_date_unix - $my_date_unix)/86400));
-    echo "<font size='5px'>Разность между датой моего рождения и сегодняшней датой составляет " . $end .  " день </font>" . '<br>';
-
-    $text_n = $text . $text1 . $text3 . $text4 . $text5 . $text6 . $text7 . $text8 . $text9 . $text10 . $text11 .
+    <h2><? $text14 = 'Произведено Мной';
+        echo $text14; ?></h2>
+    <?
+    $all_text = $text . $text1 . $text3 . $text4 . $text5 . $text6 . $text7 . $text8 . $text9 . $text10 . $text11 .
         $text12 . $text13 . $text14;
-$vowelCount = preg_match_all('/[аеёиоуыэюя]/iu',$text_n);
-echo "<font size='5px'>В тексте " . $vowelCount . " гласных букв</font>";
-?>
+    //функция вывода суммы слов
+    function sum_words_text($all_text)
+    {
+        echo "<font size='5px'>На странице выведено " . (str_word_count($all_text) + 3) . " слов</font>" . "<br>";
+    }
+    sum_words_text($all_text);
+    // функция подсчета дней
+    count_days($my_date, $now_date);
+    // функция подсчета букв
+    function letters($all_text)
+    {
+        $vowelCount = preg_match_all('/[аеёиоуыэюя]/iu', $all_text);
+        echo "<font size='5px'>В тексте " . $vowelCount . " гласных букв</font>";
+    }
+
+    letters($all_text);
+    ?>
 
 </div>
 </body>
