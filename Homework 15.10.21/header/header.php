@@ -15,7 +15,7 @@
             <a href="header/menu/image.php" target="_blank" style="text-decoration: none" class="two">Таблица</a>
         </div>
         <div class="top">
-            <a href=# style="text-decoration: none" class="two">Авторизация</a>
+            <a href="header/menu/authorization.php" style="text-decoration: none" class="two">Авторизация</a>
         </div>
         <div class="top">
             <a href="header/menu/arrays.php" style="text-decoration: none" class="two">Массивчики</a>

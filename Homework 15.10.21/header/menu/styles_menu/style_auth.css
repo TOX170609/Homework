@@ -1,0 +1,72 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+.warning{
+    color: red;
+    font: bold calc(25px) Verdana;
+    margin-left: 350px;
+}
+.warning1{
+    color: black;
+    font: bold calc(25px) Verdana;
+    margin-left: 650px;
+}
+.logo{
+    margin-left: 230px;
+    height: 50px;
+}
+.info{
+    color: red;
+    font: bold calc(40px) Verdana;
+    width: 500px;
+    text-align: center;
+    margin-left: 550px;
+}
+.log{
+    font: bold calc(30px) Verdana;
+    border: 5px solid slategray;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+.pass{
+    font: bold calc(30px) Verdana;
+    border: 5px solid slategray;
+    width: 480px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+.submit{
+    font: bold calc(30px) Verdana;
+    border: 5px solid slategray;
+    width: 500px;
+    height: 50px;
+    margin-left: 550px;
+    border-radius: 15px;
+}
+.congr{
+    font: bold calc(30px) Verdana;
+    color: green;
+}
+.comment{
+   height: 150px;
+    width: 450px;
+    border: 2px solid slategray ;
+    border-radius: 15px;
+}
+.send{
+    margin: 0 350px;
+}
+.return_auth{
+    margin: 240px 1200px;
+    font: bold calc(15px) Verdana;
+}
+.return{
+    font: bold calc(15px) Verdana;
+}
+.return_reg{
+    margin: 240px 1000px;
+    font: bold calc(15px) Verdana;
+}
