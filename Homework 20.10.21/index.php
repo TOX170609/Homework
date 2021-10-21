@@ -1,4 +1,15 @@
 <?php
+//Для удаления сессии функция session_destroy()
+//Cookie окрас фона, для просмотра реализации перехода на сайты факт и битрикс прошу пройти авторизацию (L:Anton,P:123).
+
+$color = $_POST['color'];
+if ($color == 'deepskyblue') {
+    setcookie('color', 'deepskyblue', time() + 3600*24*24,'/');
+} elseif ($color == 'lightgoldenrodyellow') {
+    setcookie('color', 'lightgoldenrodyellow', time() + 0x7FFFFFFF, '/');
+} elseif ($color == 'lightgreen') {
+    setcookie('color', 'lightgreen', time() + 0x7FFFFFFF, '/');
+}
 
 date_default_timezone_set('Europe/Moscow');
 //функция временных тем страницы
@@ -10,7 +21,6 @@ function real()
         echo 'styles/styles_night.css';
     }
 }
-
 
 //окрас четных слов
 function color_text($text)
@@ -45,8 +55,8 @@ function count_days($my_date, $now_date)
     echo "<font size='5px'>Разность между датой моего рождения и сегодняшней датой составляет " . $end . " день </font>" . '<br>';
 }
 
-?>
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,7 +67,7 @@ initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href= <?php real(); ?>>
     <title>Homework</title>
 </head>
-<body>
+<body style="background-color: <? echo $_COOKIE['color']?>">
 <?php
 include('header/header.php');
 ?>
@@ -247,6 +257,7 @@ include('header/header.php');
     {
         echo "<font size='5px'>На странице выведено " . (str_word_count($all_text) + 3) . " слов</font>" . "<br>";
     }
+
     sum_words_text($all_text);
     // функция подсчета дней
     count_days($my_date, $now_date);
@@ -259,7 +270,15 @@ include('header/header.php');
 
     letters($all_text);
     ?>
-
+    <br> <font size="4,5px">Выберите цвет темы</font>
+    <form method="post" >
+        <select name="color" >
+            <option value="lightgoldenrodyellow">Светло-желтый</option>
+            <option value="deepskyblue">Светло-синий</option>
+            <option value="lightgreen">Светло-зеленый</option>
+            <input type="submit">
+        </select>
+    </form>
 </div>
 </body>
 </html>

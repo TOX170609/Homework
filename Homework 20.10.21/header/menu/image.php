@@ -136,5 +136,8 @@
         </td>
     </tr>
 </table>
+<div>
+     <a href="../../index.php">Вернуться</a>
+</div>
 </body>
 </html>

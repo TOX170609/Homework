@@ -1,6 +1,28 @@
 body{
     background-color: lightgoldenrodyellow;
 }
+.two {
+    color: black;
+}
+
+.two:hover {
+    transition: all .3s;
+}
+
+.two:hover {
+    background-color: yellow;
+}
+.top {
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+.flex_menu {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    font: 20px Verdana;
+    justify-content: flex-end;
+}
 .warning{
     color: red;
     font: bold calc(25px) Verdana;
@@ -69,4 +91,14 @@ body{
 .return_reg{
     margin: 240px 1000px;
     font: bold calc(15px) Verdana;
+}
+.exercises{
+    border: 3px solid slategray;
+}
+.flex_menu1 {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    font: 20px Verdana;
+    justify-content: space-between;
 }
