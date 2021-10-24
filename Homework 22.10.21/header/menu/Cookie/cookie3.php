@@ -1,7 +1,7 @@
 <?php
-$last = isset($_COOKIE['last']) ? $_COOKIE['last'] : 'никогда';
-
-setcookie('last', $last+1, time()+3600*24*31, '/');
+$count = (isset($_COOKIE['count'])) ? $_COOKIE['count'] : '0';
+$count++;
+setcookie('count', $count, time()+3600*24*24, '/');
 ?>
 <!doctype html>
 <html lang="en">
@@ -15,7 +15,7 @@ setcookie('last', $last+1, time()+3600*24*31, '/');
 </head>
 <body>
 <div>
-    Вы посетили наш сайт, <? echo $last; ?> раз!
+    Вы посетили наш сайт, <? echo $count; ?> раз!
 </div>
 </body>
 </html>
