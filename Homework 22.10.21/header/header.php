@@ -24,6 +24,9 @@
         <div class="top">
             <a href="header/menu/homework.php" style="text-decoration: none" class="two" name="user_way2">Домашние задания</a>
         </div>
+        <div class="top">
+            <a href="header/menu/cookie.php" style="text-decoration: none" class="two" name="user_way2">Cookie</a>
+        </div>
     </div>
 </header>
 </body>

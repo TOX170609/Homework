@@ -94,11 +94,19 @@ body{
 }
 .exercises{
     border: 3px solid slategray;
+    margin: 10px;
 }
 .flex_menu1 {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     font: 20px Verdana;
+    justify-content: space-between;
+}
+.flex_menu3 {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    font: 30px Verdana;
     justify-content: space-between;
 }
