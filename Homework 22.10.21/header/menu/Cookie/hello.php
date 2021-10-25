@@ -1,10 +1,8 @@
 <?php
 session_start();
-if (empty($_SESSION['date'])){
-    $_SESSION = date('H:m:s');
-}
-echo 'Ты зашел в '; print_r  ($_SESSION);
-
+$user = $_POST['user'];
+$_SESSION['user'] = $user;
+//var_dump($_SESSION);
 ?>
 <!doctype html>
 <html lang="en">
@@ -17,5 +15,9 @@ echo 'Ты зашел в '; print_r  ($_SESSION);
     <title>Document</title>
 </head>
 <body>
+<div>
+    Привет, <? echo $user; ?>
+</div>
+
 </body>
 </html>
