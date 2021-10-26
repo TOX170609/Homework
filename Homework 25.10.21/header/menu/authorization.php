@@ -1,5 +1,4 @@
 <?php
-//я тут напишу
 $hostname = 'localhost';
 $username = 'Anton';
 $password = 'Fact2021';
@@ -25,10 +24,6 @@ foreach ($arr_select as $value) {
 //    echo "<pre>";
 //    echo $value['login'] . "<br>";
 //    echo $value['password']. "<br>";
-//echo $antonio = md5('Antonio') . "<br>";
-//echo $antonio = md5('123456');
-//    echo "</pre>";
-//echo "<pre>";
 //print_r($arr_select);
 //echo "</pre>";
 
