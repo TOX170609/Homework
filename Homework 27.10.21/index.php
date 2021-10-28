@@ -4,7 +4,7 @@
 
 $color = $_POST['color'];
 if ($color == 'deepskyblue') {
-    setcookie('color', 'deepskyblue', time() + 3600*24*24,'/');
+    setcookie('color', 'deepskyblue', time() + 3600 * 24 * 24, '/');
 } elseif ($color == 'lightgoldenrodyellow') {
     setcookie('color', 'lightgoldenrodyellow', time() + 0x7FFFFFFF, '/');
 } elseif ($color == 'lightgreen') {
@@ -64,10 +64,11 @@ function count_days($my_date, $now_date)
     <meta name="viewport"
           content="width=device-width, user-scalable=no,
 initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href= <?php real(); ?>>
-    <title>Homework</title>
+    <link rel="stylesheet" href= <?php real(); ?> >
+    <title>Homework
+    </title>
 </head>
-<body style="background-color: <? echo $_COOKIE['color']?>">
+<body style="background-color: <? echo $_COOKIE['color'] ?>">
 <?php
 include('header/header.php');
 ?>
@@ -79,10 +80,10 @@ include('header/header.php');
     bfbdbff1961523:0xdf8e730ed1eeb2be!8m2!3d36.8549692!4d28.2709122?hl=ru"><img src="images/Me.JPG">
             </a>
         </div>
-        <div class="Name" align="center"><? $text3 = 'Булдаков Антон';
+        <div class="Name" align="center"> <?php $text3 = 'Булдаков Антон';
             echo $text3; ?></div>
         <div class="Info" align="center">
-            <?
+            <?php
             $text1 = 'Мне 32 года, женат, работаю на ПАО «ММК» менеджером по развитию первого 
             передела в группе главного металлурга, по образованию инженер-металлург. <br> В 2009 году с отличием 
             закончил Индустриальный колледж им. Н.И. Макарова по профессии техник-металлург, в 2016 году заочно закончил 
@@ -95,7 +96,7 @@ include('header/header.php');
             ?>
         </div>
         <div class="Feedback" align="center">
-            <?
+            <?php
             $text = 'Уроки проходят в хорошем темпе, подобралась хорошая группа, Регина терпеливая, вежливая и умная 
             девушка которая старается подать информацию таким образом что после пояснения практически не остается 
             вопросов. На данный момент могу сказать,что я очень доволен проходящим обучением. Рад тому моменту что 
@@ -106,7 +107,7 @@ include('header/header.php');
             ?>
         </div>
     </div>
-    <div class="was"><? $text4 = 'Где побывал';
+    <div class="was"><?php $text4 = 'Где побывал';
         echo $text4; ?></div>
     <div class="flex_info">
         <div class="block_element">
@@ -115,7 +116,7 @@ include('header/header.php');
                     <img src="images/Cambodgia.jpg" alt="" width="100%">
                 </a>
             </div>
-            <div class="text"><?
+            <div class="text"><?php
                 $text5 = 'Ангко́р-Ват прибл. перевод — «столичный храм»; возможный перевод «обитель Вишну») — храмовый комплекс в
                 честь бога Вишну, построенный королём Сурьяварманом II в первой половине XII века в области Ангкор,
                 провинции Сиемреап на севере Камбоджи, в окрестностях Великого озера, где в XI—XIV веках находился район
@@ -130,7 +131,7 @@ include('header/header.php');
                     <img src="images/Dominik.JPG" alt="" width="100%">
                 </a>
             </div>
-            <div class="text"><?
+            <div class="text"><?php
                 $text6 = 'д. Альтос-де-Чавон (исп. Altos de Chavón) — искусственно воссозданная средневековая территория — точная
                 копия испанской деревни XV века, называемый городом художников и ремесленников. В городке есть несколько
                 каменных улочек, центральная площадь, школа живописи, амфитеатр и церковь святого Станислава, в которой
@@ -141,11 +142,11 @@ include('header/header.php');
         </div>
         <div class="block_element">
             <div class="picture_1">
-                <a href="http://recstar.ru/reklamniy-rolik/gde-snimali-reklamu-bounty.html">
+                <a href="https://recstar.ru/reklamniy-rolik/gde-snimali-reklamu-bounty.html">
                     <img src="images/Saona.jpg" alt="" width="100%">
                 </a>
             </div>
-            <div class="text"><?
+            <div class="text"><?php
                 $text7 = 'Саона — самый крупный остров, относящийся к провинции Доминиканской республики Ла-Романа. Остров открыт
                 Христофором Колумбом во время второй экспедиции 14 сентября 1494. На острове множество пещер, ранее
                 использовавшихся индейцами тайно. Самая известная — легендарная пещера Котубанама, названная так по
@@ -160,7 +161,7 @@ include('header/header.php');
                     <img src="images/Ireland.JPG" alt="" width="100%">
                 </a>
             </div>
-            <div class="text"><?
+            <div class="text"><?php
                 $text8 = 'Темпл-Бар — один из старейших районов Дублина, на территории которого располагается множество пабов и
                 магазинов. В Средние века район назывался приходом Св. Андрея. Он опустел в XIV веке и вновь начал
                 развиваться в XVII, когда и появилось современное название. В 1991 году правительством была создана
@@ -170,7 +171,7 @@ include('header/header.php');
             </div>
         </div>
     </div>
-    <div class="will"><? $text10 = 'Где мечтаю побывать';
+    <div class="will"><?php $text10 = 'Где мечтаю побывать';
         echo $text10; ?></div>
     <div class="container">
         <div class="grid">
@@ -179,7 +180,7 @@ include('header/header.php');
                     <img src="images/hobbiton.jpg" alt="" width="100%">
                 </a>
             </div>
-            <div class="text"><?
+            <div class="text"><?php
                 $text9 = 'Хоббитон — знаменитое место в Новой Зеландии, наиболее знаменитое проходившими на его территории
                 съёмками трилогий «Властелин колец» и «Хоббит». Хоббитон расположен на семейной ферме примерно в 8 км к
                 западу от Хинуэры и в 10 км к юго-западу от Матаматы, в Вайкато, и в настоящее время является знаменитым
@@ -196,7 +197,7 @@ include('header/header.php');
                     <img src="images/Los.jpg" alt="" width="100%">
                 </a>
             </div>
-            <div class="text"><?
+            <div class="text"><?php
                 $text11 = 'Лос-А́нджелес— город в США на юге штата Калифорния, находящийся на берегу Тихого океана. Крупнейший по
                 численности населения в штате и второй — в стране (на 1 июля 2009 года — 3 831 868 жителей). Город
                 является административным центром одноимённого округа, а также центром Большого Лос-Анджелеса —
@@ -214,7 +215,7 @@ include('header/header.php');
                     <img src="images/London.jpg" alt="" width="100%">
                 </a>
             </div>
-            <div class="text"><?
+            <div class="text"><?php
                 $text12 = 'Ло́ндон — столица и крупнейший город Соединённого Королевства Великобритании и Северной Ирландии.
                 Административно образует регион Англии Большой Лондон, разделённый на 33 самоуправляемых территории.
                 Образует агломерацию Большой Лондон и более обширный метрополитенский район. Расположен на юго-востоке
@@ -232,7 +233,7 @@ include('header/header.php');
                     <img src="images/Melburn.jpg" alt="" width="100%">
                 </a>
             </div>
-            <div class="text"><?
+            <div class="text"><?php
                 $text13 = 'Ме́льбурн — второй по величине город Австралии после Сиднея, столица штата Виктория, расположившаяся
                 вокруг залива Порт-Филлип. Численность населения с пригородами составляет около 4 246 345 человек.
                 Мельбурн — самый южный город-миллионер в мире. Город считается одним из основных коммерческих,
@@ -247,7 +248,7 @@ include('header/header.php');
     </div>
 </main>
 <div class="footer">
-    <h2><? $text14 = 'Произведено Мной';
+    <h2><?php $text14 = 'Произведено Мной';
         echo $text14; ?></h2>
     <?
     $all_text = $text . $text1 . $text3 . $text4 . $text5 . $text6 . $text7 . $text8 . $text9 . $text10 . $text11 .
@@ -271,8 +272,8 @@ include('header/header.php');
     letters($all_text);
     ?>
     <br> <font size="4,5px">Выберите цвет темы</font>
-    <form method="post" >
-        <select name="color" >
+    <form method="post">
+        <select name="color">
             <option value="lightgoldenrodyellow">Светло-желтый</option>
             <option value="deepskyblue">Светло-синий</option>
             <option value="lightgreen">Светло-зеленый</option>

@@ -1,25 +1,30 @@
 <?php
-$hostname = 'localhost';
-$username = 'Anton';
-$password = 'Fact2021';
-$bdname = 'my-site';
-$db_connect = mysqli_connect($hostname, $username, $password, $bdname);
-mysqli_set_charset($db_connect, 'utf8');
-$select = mysqli_query($db_connect, "SELECT * FROM `authorization`");
-$arr_select = mysqli_fetch_all($select, MYSQLI_ASSOC);
-
+require 'MyAuth.php';
 $login = md5(trim($_POST['login']));
 $password = md5(trim($_POST['password']));
-foreach ($arr_select as $value) {
-    if ($value['login'] == $login) {
-        if ($value['password'] == $password) {
-            header("Location: feedback.php");
-        } else {
-            echo "<font class='warning'> Неправильно, введите логин или пароль, попробуйте еще раз! </font>";
-            break;
-        }
-    }
-}
+$auth = new MyAuth("$login","$password");
+$auth -> Db_connect();
+//$hostname = 'localhost';
+//$username = 'Anton';
+//$password = 'Fact2021';
+//$bdname = 'my-site';
+//$db_connect = mysqli_connect($hostname, $username, $password, $bdname);
+//mysqli_set_charset($db_connect, 'utf8');
+//$select = mysqli_query($db_connect, "SELECT * FROM `authorization`");
+//$arr_select = mysqli_fetch_all($select, MYSQLI_ASSOC);
+//
+//$login = md5(trim($_POST['login'] ));
+//$password = md5(trim($_POST['password']));
+//foreach ($arr_select as $value) {
+//    if ($value['login'] == $login) {
+//        if ($value['password'] == $password) {
+//            header("Location: feedback.php");
+//        } else {
+//            echo "<font class='warning'> Неправильно, введите логин или пароль, попробуйте еще раз! </font>";
+//            break;
+//        }
+//    }
+//}
 
 //    echo "<pre>";
 //    echo $value['login'] . "<br>";
@@ -42,7 +47,6 @@ foreach ($arr_select as $value) {
 //} else {
 //    echo "<font class='warning1'>Введите данные!</font>";
 //}
-
 ?>
 <!doctype html>
 <html lang="en">
@@ -76,5 +80,6 @@ foreach ($arr_select as $value) {
     <div class="return_auth">
         <a href="../../index.php">Вернуться</a>
     </div>
+</form>
 </body>
 </html>
