@@ -112,7 +112,6 @@ main {
         grid-template-rows: 1fr;
     }
 }
-
 .picture_1:hover {
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
